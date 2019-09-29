@@ -12,7 +12,7 @@ export default function Page1(props) {
     return (
         <View>
             <Text>{props.navigation.getParam("name")}</Text>
-            <Button color="black" onPress={handleClick} styles={styles.continueButton} title="Get Started" />
+            <Button color="black" onPress={handleClick} styles={styles.continueButton} title="This is page one of the new navigator" />
         </View>
     )
 }

@@ -9,7 +9,6 @@ import NewNavigator from './screens/NewNavigator';
 const MainNavigator = createStackNavigator({
   Home: { screen: HomeScreen },
   Register: { screen: RegisterScreen },
-  NewNavigator: { screen: NewNavigator },
 }, {
   initialRouteName: 'Home'
 });
@@ -18,9 +17,6 @@ const AppWithNav = createAppContainer(MainNavigator);
 
 export default class App extends React.Component {
   render() {
-    return (
-      < AppWithNav />
-
-    )
+    return false ? < AppWithNav /> : <NewNavigator />;
   }
 }
